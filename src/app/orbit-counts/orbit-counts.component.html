@@ -1,6 +1,8 @@
-<h3>Satellite Count:</h3>
-<div class="counts">
-	<div>Total: <span class="counts-total">NaN</span></div>
-</div>
+lines (5 sloc)  226 Bytes
 
-<!-- TODO 4: add logic to count number of satellites displayed -->
+<h3>Satellite Counts:</h3>
+
+<div class="counts">
+    <div>Total: <span>{{satellites.length}}</span></div>
+    <div *ngFor='let satellite of satellites'>{{satellite.name}}: <span>{{getCount(satellite.type)}}</span></div>
+</div>

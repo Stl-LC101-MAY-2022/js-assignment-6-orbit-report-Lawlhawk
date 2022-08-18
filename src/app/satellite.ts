@@ -20,4 +20,12 @@ export class Satellite {
 
 }
 
-// TODO 3a: fix isSpaceDebris check
+shouldShowWarning() {
+	let satelliteType = "Space Debris";
+
+	if (this.type.toLowerCase() === satelliteType.toLowerCase()) {
+		return true;
+	}
+	return false;
+}
+
